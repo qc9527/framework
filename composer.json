@@ -1,0 +1,33 @@
+{
+    "name": "qc9527/framework",
+    "description": "框架核心文件",
+    "authors": [
+        {
+            "name": "qc9527",
+            "email": "423149751@qq.com"
+        }
+    ],
+    "license": "Apache-2.0",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "think\\wendasns\\": "src/"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "think\\wendasns\\WendaService"
+            ],
+            "config":{
+                "wendasns": "src/config.php"
+            }            
+        }
+    },
+    "minimum-stability": "dev"
+}
